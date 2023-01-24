@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginTop="8dp"
+app:cardBackgroundColor="#fcffe0"
+app:cardCornerRadius="8dp"
+app:cardElevation="10dp"
+app:cardMaxElevation="10dp"
+app:cardPreventCornerOverlap="true"
+>
+
+<!--
+    In the above cardview widget
+    cardelevation property will give elevation to your card view
+    card corner radius will provide radius to your card view
+    card background color will give background color to your card view
+    card max elevation will give the cardview maximum elevation
+    card prevent corner overlap will add padding to CardView on v20 and
+    before to prevent intersections between the Card content and rounded corners.
+    card use compact padding will add padding in API v21+ as well to have the same
+    measurements with previous versions.
+-->
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+
+    <!--ImageVIew to display our Course Image-->
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:text="Category"
+        android:textColor="@color/black"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="221dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/category"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="80dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:text="Amount"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="221dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/date"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="1dp"
+        android:gravity="bottom"
+        android:text="Type"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:paddingBottom="5dp"/>
+
+
+    <!--
+<ImageView
+    android:id="@+id/categoryImage"
+    android:layout_width="81dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:layout_marginLeft="-19dp"
+    android:layout_toRightOf="@+id/amount"
+    android:paddingLeft="300dp"
+    android:src="@drawable/bill"/>-->
+
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
